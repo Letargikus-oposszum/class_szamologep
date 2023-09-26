@@ -3,7 +3,7 @@
 using System.ComponentModel.Design;
 
 using ClassWork0921;
-
+Console.WriteLine("Működik");
 var osztaly = new szamologep();
 var osztaly2 = new szamologep2();
 
