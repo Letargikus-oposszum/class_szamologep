@@ -1,50 +1,31 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using ClassWork0921;
 
-using System.ComponentModel.Design;
-
-using ClassWork0921;
-Console.WriteLine("Működik");
-var osztaly = new szamologep();
-var osztaly2 = new szamologep2();
+var calculator = new Calculator();
 
 while (true) { 
     Console.WriteLine("ö - összeadás / k - kivonás / o - osztás / sz - szorzás / szar - másodfokú");
-    string c = Console.ReadLine();
+    string operation = Console.ReadLine();
 
-    /*
-    if (c == "ö")
-        osztaly.összeg();
-    else if (c == "k")
-        osztaly.kivonas();
-    else if (c == "sz")
-        osztaly2.szorz();
-    else if (c == "o")
-        osztaly2.osztas();
-    else if (c == "szar")
-        osztaly.masodfok();
-    else if (c == "ki")
-        break;
-    */
-    switch (c)
+    switch (operation)
     {
         case "ö":
-            osztaly.összeg();
+            calculator.Összeg();
             break;
 
         case "k":
-            osztaly.kivonas();
+            calculator.kivonas();
             break;
 
         case "sz":
-            osztaly2.szorz();
+            calculator.szorz();
             break;
 
         case "o":
-            osztaly2.osztas();
+            calculator.osztas();
             break;
 
         case "szar":
-            osztaly.masodfok();
+            calculator.masodfok();
             break;
 
         case "ki":
